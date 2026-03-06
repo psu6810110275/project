@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch
-from coe_6810110275.random_utils import guess_int, guess_float
+from coe_6810110275.guess_number import guess_int, guess_float
 
 class RandomUtilsTest(unittest.TestCase):
     
