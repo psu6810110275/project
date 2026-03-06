@@ -4,7 +4,7 @@ from coe_6810110275.guess_number import guess_int, guess_float
 
 class RandomUtilsTest(unittest.TestCase):
     
-    @patch('coe_6810110275.random_utils.random.randint')
+    @patch('coe_6810110275.guess_number.random.randint')
     def test_guess_int_should_return_mocked_value(self, mock_randint):
         mock_randint.return_value = 5
         start, stop = 1, 10
@@ -17,7 +17,7 @@ class RandomUtilsTest(unittest.TestCase):
         self.assertEqual(result, expected_output)
         mock_randint.assert_called_once_with(start, stop)
 
-    @patch('coe_6810110275.random_utils.random.uniform')
+    @patch('coe_6810110275.guess_number.random.uniform')
     def test_guess_float_should_return_mocked_value(self, mock_uniform):
         # Arrange
         mock_uniform.return_value = 3.14

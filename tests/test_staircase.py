@@ -44,5 +44,17 @@ class StaircaseTest(unittest.TestCase):
         # assert
         self.assertEqual(result, expected_output)
 
+    def test_give_0_should_return_empty(self):
+        # arrange
+        n = 0
+        pattern = '#'
+        expected_output = ""
+        
+        # act
+        result = staircase.staircase(n, pattern)
+        
+        # assert
+        self.assertEqual(result, expected_output)
+
 # if __name__ == '__main__':
 #     unittest.main()
