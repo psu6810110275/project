@@ -11,3 +11,8 @@ class PrimeListTest(unittest.TestCase):
         prime_list = [2, 3, 5]
         is_prime = is_prime_list(prime_list)
         self.assertTrue(is_prime)
+        
+    def test_give_4_6_8_is_not_prime(self):
+        not_prime_list = [4, 6, 8]
+        is_prime = is_prime_list(not_prime_list)
+        self.assertFalse(is_prime)
