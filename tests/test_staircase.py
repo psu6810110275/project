@@ -32,5 +32,17 @@ class StaircaseTest(unittest.TestCase):
         # assert
         self.assertEqual(result, expected_output)
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_give_31_should_return_empty(self):
+        # arrange
+        n = 31
+        pattern = '#'
+        expected_output = ""
+        
+        # act
+        result = staircase.staircase(n, pattern)
+        
+        # assert
+        self.assertEqual(result, expected_output)
+
+# if __name__ == '__main__':
+#     unittest.main()
