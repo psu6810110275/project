@@ -1,4 +1,4 @@
-from coe_number.number_utils import is_prime_list
+from coe_6810110275.number_utils import is_prime_list
 import unittest
 
 class PrimeListTest(unittest.TestCase):
